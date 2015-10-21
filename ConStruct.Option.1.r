@@ -187,7 +187,8 @@ for(i in 1:resolution){
   e.likelihood[i] = exp(ln.likelihood[i])
 }
 total = sum(e.likelihood)
-plot(f, e.likelihood / total, type = "l", ylab = "Likelihood")
+e.likelihood = e.likelihood / total
+plot(f, e.likelihood, type = "l", xlab = "F",ylab = "Likelihood")
 #
 #
 #
@@ -195,4 +196,7 @@ writeLines("Maximum value of Fst = ")
 print(fst.max)
 writeLines("Maximum Likelihood value of Fst = ")
 print(ML)
+writeLines("G = ")
+G = exp(log(max(e.likelihood))-2)print(G)
+
 
