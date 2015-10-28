@@ -238,6 +238,7 @@ likelihood.locus.c.res = matrix(0, resolution, N, num.loc)  #  Likelihood of an 
 #
 #
 #
+print("Analysing…")
 f.resolution = 1
 f = 0					#  Iterate through f from 0 to fst.max
 # print(f.resolution - 1)		#  Option to note progress of analysis (see additional print option below)
@@ -358,7 +359,7 @@ for(i in 1: resolution){
 write.table(e.likelihood.cs,file="ConStruct.Outfile.txt")
 x=seq(0, fst.max - f.values, by = f.values)
 y=seq(0, 0.99, by = 0.01)
-contour(x, y, e.likelihood.cs, xlab = "FST", ylab = "% Consanguinity")
+contour(x, y, e.likelihood.cs,xlab = expression("F"[ST]),ylab = expression("c"[g]),nlevels=4)
 writeLines("G = ")
 G = exp(log(max(e.likelihood.cs))-2)print(G)
 
