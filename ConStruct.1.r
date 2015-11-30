@@ -610,7 +610,7 @@ simulate = function(N, num.loc, fst, r.actual, c, r.consider, max.alleles, f.res
   #  Example of use:
   #  > simulate(200, 12, 0.05, 0.05, 0.5, 0.05, 100, 100, 100, 10000)  # It is necessary to specify number of alleles per locus
 # ***********************************
-# specify number of alleles per locus# ***********************************  num.alleles = c(8,8,8,8)#
+# specify number of alleles per locus# ***********************************  num.alleles = c(8,8,8,8,8,8,8,8,8,8,8,8)#
 # Check to see if specified number of alleles corresponds with the specified number of 
 # loci (num.loc):
 if(length(num.alleles) != num.loc){
