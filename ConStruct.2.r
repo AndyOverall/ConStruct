@@ -21,7 +21,7 @@ simulate = function(N, num.loc, fst, r.actual, c, r.consider, max.alleles, f.res
 # ***********************************
 # specify number of alleles per locus
 # ***********************************
-  num.alleles = c(8,8,8,8,8,8,8,8,8,8,8,8)
+  num.alleles = c(4,4,4,4,4)
 #
 # Check to see if specified number of alleles corresponds with the specified number of 
 # loci (num.loc):
@@ -111,12 +111,14 @@ if(length(num.alleles) != num.loc){
 # Specifies maximum number of alleles given by num.alleles	
 for(i in 1:num.loc){
   limit[i] = num.alleles[i]
+
 #
 #  Generate random allele frequencies until they sum to 1
-  while(sum(x.old.1[i, ]) >= 1){
-    for(j in 1:limit[i]){
-      x.old.1[i, j] = runif(1, 0, 1)  
-    }
-  }
-  x.old.1[i, limit[i]] = 1 - sum(x.old.1[i, 1:limit[i] - 1])
+#  while(sum(x.old.1[i, ]) >= 1){
+#    for(j in 1:limit[i]){
+#      x.old.1[i, j] = runif(1, 0, 1)
+#    }
+#  }
+
+
 #
