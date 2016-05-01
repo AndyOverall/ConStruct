@@ -733,11 +733,11 @@ for(i in 1:num.loc){
 
 #
 #  Generate random allele frequencies until they sum to 1
-  while(sum(x.old.1[i, ]) >= 1){
-    for(j in 1:limit[i]){
-      x.old.1[i, j] = runif(1, 0, 1)  
-    }
-  }
-}
-  x.old.1[i, limit[i]] = 1 - sum(x.old.1[i, 1:limit[i] - 1])
+#  while(sum(x.old.1[i, ]) >= 1){
+#    for(j in 1:limit[i]){
+#      x.old.1[i, j] = runif(1, 0, 1)
+#    }
+#  }
+
+
 #
