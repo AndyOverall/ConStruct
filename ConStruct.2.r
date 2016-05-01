@@ -120,10 +120,3 @@ for(i in 1:num.loc){
   }
   x.old.1[i, limit[i]] = 1 - sum(x.old.1[i, 1:limit[i] - 1])
 #
-while(sum(x.old.2[i, ]) >= 1){
-    for(j in 1:limit[i]){
-      x.old.2[i, j] = runif(1, 0, 1)
-    }
-  }	
-  x.old.2[i, limit[i]] = 1 - sum(x.old.2[i, 1:limit[i] - 1])	
-  
