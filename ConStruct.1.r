@@ -20,7 +20,7 @@
 #
 #
 # To run this script, copy into the working directory containing your input files and type 
-# > source("ConStruct.1.r"). The code is in two parts ConStruct.1.r and ConStruct.2.r
+# > source("ConStruct.1.r"). 
 # There are three functions:
 #
 #  (1) max.likelihood = function(data, max.alleles, resolution)
