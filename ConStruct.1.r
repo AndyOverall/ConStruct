@@ -29,7 +29,7 @@
   #    max.alleles places an uppermost limit on the number of alleles considered
   #    resolution is the resolution of the F parameter	
   #  Example of use:
-  #  > max.likelihood(data=”infile.txt", max.alleles=1000, resolution=100)
+  #  > max.likelihood(data="infile.txt", max.alleles=1000, resolution=100)
 # 
 #  (2) construct = function(data, max.alleles, f.resolution, c.resolution, r)
   #  Arguments:
@@ -40,7 +40,7 @@
   #    r is the value of the inbreeding coefficient being considered for the      
   #      analysis of the dataset 
   #  Example of use:
-  #  > construct(data=”infile.txt", max.alleles=1000, f.resolution=100, c.resolution=100, r=0.0625)
+  #  > construct(data="infile.txt", max.alleles=1000, f.resolution=100, c.resolution=100, r=0.0625)
 #
 #  (3) simulate = function(N, num.loc, fst, r.actual, c, r.consider, max.alleles, f.resolution, c.resolution, iteration)
   # Arguments:
